@@ -1,2 +1,2 @@
-DROP SCHEMA IF EXISTS bvb_accounts CASCADE;
-CREATE SCHEMA care_package;
+DROP SCHEMA IF EXISTS care_pledge CASCADE;
+CREATE SCHEMA care_pledge;
