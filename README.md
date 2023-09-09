@@ -29,16 +29,16 @@ Step-by-Step Procedure
 ## Quotation and Financial Planning
 - The agent or family receives a general/specific quote for the care plan, including an estimate for a 3-6month care package.
 A breakdown of the costs is provided, which includes:
-* Diagnostic tests
-*  Procedure
-* Post-procedure care
-* Approximate total medical cost: $30-35K
+ * Diagnostic tests
+ *  Procedure
+ * Post-procedure care
+ * Approximate total medical cost: $30-35K
 ## Logistics and Travel Arrangements
 - Planning for family logistics including:
-* Airfare
-* Accommodation (Hotel/Guest House)
-* Food and local transportation
-* Approximate total logistics cost: $10-15K
+ * Airfare
+ * Accommodation (Hotel/Guest House)
+ * Food and local transportation
+ * Approximate total logistics cost: $10-15K
 ## Final Decision and Preparation
 - The family reviews the quote provided by the agent.
 - The family makes an informed decision on selecting the hospital or doctor based on the information and recommendations received.
