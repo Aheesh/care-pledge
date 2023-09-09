@@ -1,22 +1,22 @@
 version: "3"
 services:
-  care-package-database:
+  care-pledge-database:
     image: postgres
     env_file:
       - ./.env
-    container_name: bvb_db
+    container_name: care_pledge_db
     volumes:
       - ../database/:/docker-entrypoint-initdb.d/
     ports:
       - ${POSTGRES_PORT}:${POSTGRES_PORT}
 
-  care-package-app:
+  care-pledge-app:
     image: node:latest
-    container_name: bvb_app
+    container_name: care_pledge_app
     depends_on: 
-      - bvb-database
+      - care-pledge-database
     links:
-      - bvb-database
+      - care-pledge-database
     environment: 
       WAIT_HOSTS: postgres:5432
     volumes:
