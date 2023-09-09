@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "BVB",
+  "description": "care_pledge",
   "main": "index.js",
   "scripts": {
     "lint-staged": "lint-staged",
