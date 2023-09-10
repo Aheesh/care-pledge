@@ -44,10 +44,13 @@ Considering the available privacy blockchain solutions out there such as Aztec, 
 
 ## Architecture
 
+### Bridge between Ethereum & Nightfall?
 LayerZero, specifically Polyhedra's zkLightClient technology is used to bridge between Ethereum and Nightfall 3. 
 
 ![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/848a00a9-f278-4a46-b520-99a0c50e23e7)
 
-There will only be transmission of messages (bytes) across different networks. No tokens will be transferred.
+### Data/Tokens transferred?
+There will only be transmission of messages (bytes) across different networks. ERC-20 tokens to be transferred across networks for fee payment.
 
-
+### Privacy driven workflow(s)?
+The workflow requiring privacy features will be the Deposit transaction. During the fund dispersion step to the Healthcare practitioner/institutions, they will need to upload the patient's report for verification. However, this information does not need to be known by the donor(s). In essence, this step obfuscates the patient information to ensure data protection, thereby aligning with regulatory standards.
