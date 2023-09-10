@@ -19,7 +19,7 @@ We are focusing on a critical use case involving:
 ## Target Disease:
 - Sickle Cell Disease requiring bone marrow transplants.
 ## Demographic:
-- Patient families from Nigeria traveling to India for the medical procedure.
+- Patient families from Nigeria traveling to Singapore, India, Malaysia for the medical procedure.
 ## Fund Management:
 - Efficient handling of excess funds and provision for additional fundraising if required.
 
