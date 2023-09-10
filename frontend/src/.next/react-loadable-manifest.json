@@ -1,0 +1,18 @@
+{
+  "../../node_modules/@walletconnect/modal/dist/index.js -> @walletconnect/modal-ui": {
+    "id": "../../node_modules/@walletconnect/modal/dist/index.js -> @walletconnect/modal-ui",
+    "files": []
+  },
+  "../../node_modules/alchemy-sdk/dist/esm/index-fd7838ce.js -> ./alchemy-provider-180365c7.js": {
+    "id": "../../node_modules/alchemy-sdk/dist/esm/index-fd7838ce.js -> ./alchemy-provider-180365c7.js",
+    "files": [
+      "static/chunks/node_modules_alchemy-sdk_dist_esm_alchemy-provider-180365c7_js.js"
+    ]
+  },
+  "../../node_modules/alchemy-sdk/dist/esm/index-fd7838ce.js -> ./alchemy-websocket-provider-cd606c7f.js": {
+    "id": "../../node_modules/alchemy-sdk/dist/esm/index-fd7838ce.js -> ./alchemy-websocket-provider-cd606c7f.js",
+    "files": [
+      "static/chunks/node_modules_alchemy-sdk_dist_esm_alchemy-websocket-provider-cd606c7f_js.js"
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Head from 'next/head'
 import { Form, Divider } from "semantic-ui-react";
 import UploadPic from "../Components/UploadPic";
 
@@ -22,6 +23,10 @@ class FormComponent extends Component {
   render() {
     const { value } = this.state;
     return (
+      <>
+      <Head>
+        <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
+      </Head>
       <Form style={{ paddingBottom: "50px" }}>
         <Form.Group widths="equal">
           <Form.Input fluid label="First name" placeholder="First name" />
@@ -93,6 +98,7 @@ class FormComponent extends Component {
           Submit My Project
         </Form.Button>
       </Form>
+      </>
     );
   }
 }
