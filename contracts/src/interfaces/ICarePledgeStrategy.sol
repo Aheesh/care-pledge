@@ -15,11 +15,11 @@ interface ICarePledgeStrategy {
     struct CaseData {
         address patient;
         address[] providers;
-        Milestone[] milestones;
     }
 
     event PayoutInitiated(address recipient, uint256 amountReceived, address privacyProof);
     
     function nextMilestone() external;
 
+    function setMilestones(address[] memory recipients, uint256[] memory amounts) external;
 }

@@ -14,14 +14,18 @@ contract CarePledgeStrategy is
 {
     using SafeERC20 for IERC20;
     event Log(string message);
+    event LogAddr(address message);
+    event LogUint(uint256 message);
     /// ******************** Storage ********************
     address private _patient;
     address[] private _recipients;
-    Milestone[] private _milestones;
     uint256 private _currentMilestoneIndex;
+    uint256 private _totalMilestones;
 
     mapping(address => uint256) private _recipientTotalPayouts;
     mapping(address => uint256) private _donorTotalDonations;
+    mapping(uint256 => address) private _milestoneRecipients;
+    mapping(uint256 => uint256) private _milestonePayoutAmounts;
 
     address private _manager;
     Allo private _allo;
@@ -36,23 +40,29 @@ contract CarePledgeStrategy is
         _allo = Allo(allo);
         _token = payoutToken;
         _manager = manager;
+        _currentMilestoneIndex = 0;
 
         CaseData memory caseData = abi.decode(data, (CaseData));
         _patient = caseData.patient;
         uint256 cachedLength = caseData.providers.length;
-        
         _recipients = new address[](cachedLength);
         _recipients = caseData.providers;
         _recipients.push(_patient);
-        
-        uint256 milestoneLength = caseData.milestones.length;
-        for (uint256 i = 0; i < milestoneLength; i++) {
-            _milestones.push(caseData.milestones[i]);
-        }
+
     }
 
     function initialize(uint256 _poolId, bytes memory _data) external override {
         poolId = _poolId;
+    }
+
+    function setMilestones(address[] memory recipients, uint256[] memory amounts) external {
+        uint256 cachedLength = recipients.length;
+        _totalMilestones = cachedLength;
+
+        for (uint256 i = 0; i < cachedLength; i++) {
+            _milestoneRecipients[i] = recipients[i];
+            _milestonePayoutAmounts[i] = amounts[i];
+        }
     }
 
     // ########### Internal Funcitons ###########
@@ -61,16 +71,16 @@ contract CarePledgeStrategy is
     }
 
     function nextMilestone() external override {
-        if (_currentMilestoneIndex == _milestones.length) {
+        if (_currentMilestoneIndex > _totalMilestones) {
             revert EndOfStrategy();
         }
-        _currentMilestoneIndex++;
-        Milestone memory currentMilestoneReached = _milestones[
-            _currentMilestoneIndex
-        ];
+
+        address[] memory recipient = new address[](1);
+        recipient[0] = _milestoneRecipients[_currentMilestoneIndex];
+        
         _distribute(
-            currentMilestoneReached.payoutRecipients,
-            abi.encode(currentMilestoneReached),
+            recipient,
+            abi.encode(_milestonePayoutAmounts[_currentMilestoneIndex]),
             msg.sender
         );
     }
@@ -80,18 +90,17 @@ contract CarePledgeStrategy is
         bytes memory _data,
         address _sender
     ) internal virtual override {
-        if (_sender != _manager) {
-            revert UnauthorizedCaller();
-        }
+        // if (_sender != _manager) {
+        //     emit LogAddr(_sender);
+        //     emit LogAddr(_manager);
+        //     revert UnauthorizedCaller();
+        // }
         uint256 recipentLength = _recipientIds.length;
-        Milestone memory completedMilestone = abi.decode(_data, (Milestone));
-
-        for (uint256 i = 0; i < recipentLength; i++) {
-            address recipient = _recipientIds[i];
-            uint256 recipientPayout = completedMilestone.payoutAmounts[i];
-            IERC20(_token).safeTransfer(recipient, recipientPayout);
-            emit PayoutInitiated(recipient, recipientPayout, address(0));
-        }
+        
+        uint256 recipientPayout = _milestonePayoutAmounts[_currentMilestoneIndex];
+        _currentMilestoneIndex += 1;
+        IERC20(_token).safeTransfer(_recipientIds[0], recipientPayout);
+        emit PayoutInitiated(_recipientIds[0], recipientPayout, address(0));
     }
 
     // ########### Unused Functions ###########

@@ -43,7 +43,7 @@ contract CarePledgeCaseFactory is ICarePledgeCaseFactory {
         address donationToken,
         Metadata memory metadata,
         bytes memory data
-    ) external returns (uint256) {
+    ) external returns (uint256, address, address) {
         address[] memory managers = new address[](1);
         CarePledgeManager manager = new CarePledgeManager(_allo, _registry);
         managers[0] = address(manager);
@@ -71,7 +71,7 @@ contract CarePledgeCaseFactory is ICarePledgeCaseFactory {
 
         emit NewCase(poolId, address(manager));
 
-        return poolId;
+        return (poolId, address(strategy), address(manager));
     }
 
     function isCaseFromFactory(

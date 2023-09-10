@@ -14,4 +14,8 @@ interface ICarePledgeManager {
     
     function executeMilestone() external;
 
+    //function getTotalDonations() external view returns (uint256);
+
+    function setFundingGoal(uint256) external;
+
 }

@@ -10,7 +10,7 @@ import { SafeERC20, IERC20 } from "openzeppelin-contracts/contracts/token/ERC20/
 
 contract CarePledgeManager is ICarePledgeManager {
     using SafeERC20 for IERC20;
-
+    event Log(string message);
     Allo private _allo;
     IRegistry private _registry;
     uint256 private _poolId;
@@ -39,24 +39,28 @@ contract CarePledgeManager is ICarePledgeManager {
         _strategy = ICarePledgeStrategy(strategy);
     }
 
+    function setFundingGoal(uint256 fundingGoal) external {
+        _fundingGoal = fundingGoal;
+    }
+
     function donate(uint256 amount) external override returns (uint256) {
         if (amount == 0) {
             revert ZeroAmount();
         }
-        if (_totalDonations == _fundingGoal) {
+
+        uint256 totalDonations = IERC20(_donationToken).balanceOf(address(this));
+        if (totalDonations == _fundingGoal) {
             revert FundingGoalReached();
         }
 
-        uint256 amountUntilGoal = _fundingGoal - _totalDonations;
+        uint256 amountUntilGoal = _fundingGoal - totalDonations;
         
         if (amount > amountUntilGoal) {
             amount = amountUntilGoal;
         }
-
         IERC20(_donationToken).transferFrom(msg.sender, address(this), amount);
         IERC20(_donationToken).approve(address(_allo), amount);
-
-        _allo.fundPool(_poolId, amountUntilGoal);
+        _allo.fundPool(_poolId, amount);
 
         return amount;
     }
@@ -65,4 +69,7 @@ contract CarePledgeManager is ICarePledgeManager {
         _strategy.nextMilestone();
     }
 
+    function getTotalDonations() external view returns (uint256) {
+        return IERC20(_donationToken).balanceOf(address(_strategy));
+    }
 }   

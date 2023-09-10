@@ -14,7 +14,7 @@ interface ICarePledgeCaseFactory {
         address donationToken,
         Metadata memory metadata,
         bytes memory data
-    ) external returns (uint256);
+    ) external returns (uint256, address, address);
 
     function isCaseFromFactory(uint256 poolId) external view returns (bool);
 }   
