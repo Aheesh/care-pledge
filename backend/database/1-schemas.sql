@@ -1,0 +1,2 @@
+DROP SCHEMA IF EXISTS care_pledge CASCADE;
+CREATE SCHEMA care_pledge;

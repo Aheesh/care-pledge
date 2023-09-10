@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import server from './src';
-import { PORT, HOST } from 'config';
+import server from './src/index.js';
+import { PORT, HOST } from './config/index.js';
 
 try {
   server.listen(PORT, HOST, (err) => {
