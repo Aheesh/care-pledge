@@ -38,7 +38,7 @@ Before we take a deep dive into privacy solutions, let's quickly recap the top t
 2. Care Pledge needs a platform to create a network of reputable affiliates and registered users to prevent fraudulent or abuse towards healthcare system.
 3. Information verified by healthcare practitioners (HCP) needs to be kept confidential while providing proofs to donors (funding transparency).
 
-Considering the available privacy blockchain solutions out there such as Aztec, Secret Network, and Nightfall 3 - we would argue that Nightfall 3 offers the most compelling solution that best fits our needs. For starters, Nightfall 3 is designed to be compatible with the Ethereum network - where Care Pledge is deployed. In this latest iteration, Nightfall 3 was also recognized for its low cost and high efficiency as it aggregates all ZK Proofs into optimistic rollups. This drastically decreases the high gas computational costs from ZK Proof transactions, thus lowering network fees which goes a long way for economically challenged users. Next, Nightfall 3 is designed as an enterprise solution. This perfectly fits our need to connect a large network of affiliates and users, while handling large amount of transactions. Supplementing our experiences in the Healthcare sector, we see huge value in adopting Nightfall 3's technology since it offers strong security through its rigorous audits and fraud detection. 
+Considering the available privacy blockchain solutions out there such as Aztec, Secret Network, and Nightfall 3 - we would argue that Nightfall 3 offers the most compelling solution that best fits our needs. For starters, Nightfall 3 is designed to be compatible with the Ethereum network - where Care Pledge is deployed. In this latest iteration, Nightfall 3 was also recognized for its low cost and high efficiency as it aggregates all ZK Proofs into optimistic rollups. This drastically decreases the high gas computational costs from ZK Proof transactions, thus lowering network fees which goes a long way for economically challenged users. Next, Nightfall 3 is designed as an enterprise solution. This perfectly fits our need to connect a large network of affiliates and users, while handling large amount of transactions. It is also worth noting that Nightfall 3 requires users to obtain X.509 certification prior to use. Essentially, this certification is an authentication security framework providing digital trust. In conclusion, from our experiences in the Healthcare sector, we see huge value in adopting Nightfall 3's technology with its suite of offerings from strong security to its scalable enterprise solutions.
 
 ![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/5d03272a-7666-4dbd-ad4a-7a6bba27d576)
 
@@ -48,9 +48,6 @@ LayerZero, specifically Polyhedra's zkLightClient technology is used to bridge b
 
 ![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/848a00a9-f278-4a46-b520-99a0c50e23e7)
 
-
-
-
-
+There will only be transmission of messages (bytes) across different networks. No tokens will be transferred.
 
 
