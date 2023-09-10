@@ -1,0 +1,17 @@
+.button-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.left-aligned-button {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
