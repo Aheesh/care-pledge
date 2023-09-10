@@ -16,9 +16,12 @@ The current crowdfunding landscape is fraught with challenges, including:
 
 # Use Case Focus
 We are focusing on a critical use case involving:
-## Target Disease: Sickle Cell Disease requiring bone marrow transplants.
-## Demographic: Patient families from Nigeria traveling to India for the medical procedure.
-## Fund Management: Efficient handling of excess funds and provision for additional fundraising if required.
+## Target Disease:
+- Sickle Cell Disease requiring bone marrow transplants.
+## Demographic:
+- Patient families from Nigeria traveling to India for the medical procedure.
+## Fund Management:
+- Efficient handling of excess funds and provision for additional fundraising if required.
 
 # Our Solution: CarePledge DApp
 To address these challenges, we present the CarePledge DApp, built on the Gitcoin Allo Protocol, offering:
