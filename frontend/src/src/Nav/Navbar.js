@@ -5,13 +5,30 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <Menu inverted className="customMenu">
-      <Menu.Item name="home">
-        <Link to="/">Home</Link>
+    <Menu customMenu inverted>
+      <Menu.Item name="Care Pledge">
+        <Link to="/">
+          <b>Care Pledge</b>
+        </Link>
       </Menu.Item>
-      <Menu.Item name="about">
-        <Link to="/about">About</Link>
-      </Menu.Item>
+
+      <Menu.Menu position="right">
+        <Menu.Item
+          name="Projects"
+          // active={activeItem === 'projects'}
+          // onClick={this.handleItemClick}
+        >
+          <Link to="/projects">Projects</Link>
+        </Menu.Item>
+
+        <Menu.Item
+          name="Account"
+          // active={activeItem === 'account'}
+          // onClick={this.handleItemClick}
+        >
+          <Link to="/account">Account</Link>
+        </Menu.Item>
+      </Menu.Menu>
     </Menu>
   );
 }

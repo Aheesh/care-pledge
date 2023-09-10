@@ -30,7 +30,12 @@ function HomePage() {
         >
           View Projects
         </Button>
-        <Button className="left-aligned-button" style={{ padding: "20px" }}>
+        <Button
+          className="left-aligned-button"
+          style={{ padding: "20px" }}
+          as={Link}
+          to="/projectCreate"
+        >
           Start your own project
         </Button>
       </div>
