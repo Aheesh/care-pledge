@@ -1,50 +1,59 @@
 # care-pledge
 Public Goods Funding Dapp for Permissionless II Hackathon
 
-# Problem we are trying to solve
-1. Improve visibility to funds.
-2. Transparency on how funds are used?
-3. Were the funds disbursed to the intended entity?
-4. What's the status of the case ?
-5. What happened to the remaining funds ?
-6. Can that be used for another cause
-7. Can that be redirected to the general pool?
+# Introduction
+In the realm of medical crowdfunding, there exists a significant gap in transparency and efficiency, especially for families traveling internationally for critical medical procedures like bone marrow transplants for sickle cell disease. Today, we introduce you to a solution that bridges this gap, fostering trust and efficiency in crowdfunding.
+Problem Statement
+The current crowdfunding landscape is fraught with challenges, including:
+## Visibility of Funds:
+- Donors often lack clarity on the accumulation and utilization of the funds they contribute.
+## Fund Utilization Transparency:
+- It's unclear how the funds are being used and whether they reach the intended entity.
+## Case Status:
+- Donors are left in the dark about the progress and current status of the medical case they have contributed to.
+## Excess Funds Management:
+- There is no clear mechanism to handle excess funds and whether they can be used for other noble causes or redirected to a general pool.
 
+# Use Case Focus
+We are focusing on a critical use case involving:
+## Target Disease:
+- Sickle Cell Disease requiring bone marrow transplants.
+## Demographic:
+- Patient families from Nigeria traveling to Singapore, India, Malaysia for the medical procedure.
+## Fund Management:
+- Efficient handling of excess funds and provision for additional fundraising if required.
 
-# Use Case
-Sickle cell disease patients from Africa (e.g. Nigeria) travel overseas (e.g. India, South Africa, Singapore) to get care that is not available in their country of residence.
+# Our Solution: CarePledge DApp
+To address these challenges, we present the CarePledge DApp, built on the Gitcoin Allo Protocol, offering:
+## On-chain Crowdfunding:
+- Ensuring transparency and security in the fundraising process.
+## Visibility to Donors:
+- Donors can track funds raised and monitor the care plan and milestone status.
+## Democratic Decision Making:
+- Donors have a say in key decisions regarding fund allocation and repurposing of excess funds.
 
-# Process for Bone Marrow Transplant 
-The standard procedure for facilitating the travel and medical arrangements for Nigerian children suffering from sickle cell anemia seeking bone marrow transplant services in India. The process involves collaboration between families, local medical service providers, and international agents.
-Step-by-Step Procedure
-## Initial Awareness and Consultation
-- The family becomes aware of the medical condition through local medical service providers.
-- Consultation with the Sickle Cell Foundation Nigeria for guidance and assistance.
-## International Referral and Agent Engagement
-- The Sickle Cell Foundation Nigeria assists in referring the case to internationally located agents.
-- Agents analyze the case and refer it to potential hospitals in India.
-## Hospital Selection and Doctor Consultation
-- Agents organize a consultation call between the hospital's doctor and the patient's family.
-- The family and agents discuss whether to select a hospital based on its reputation or a doctor based on recommendations from other families.
-## Quotation and Financial Planning
-- The agent or family receives a general/specific quote for the care plan, including an estimate for a 3-6month care package.
-A breakdown of the costs is provided, which includes:
- * Diagnostic tests
- *  Procedure
- * Post-procedure care
- * Approximate total medical cost: $30-35K
-## Logistics and Travel Arrangements
-- Planning for family logistics including:
- * Airfare
- * Accommodation (Hotel/Guest House)
- * Food and local transportation
- * Approximate total logistics cost: $10-15K
-## Final Decision and Preparation
-- The family reviews the quote provided by the agent.
-- The family makes an informed decision on selecting the hospital or doctor based on the information and recommendations received.
-- Final preparations for travel and medical procedures are made.
+# Demo Walkthrough
+## For Patient Families:
+### Case Upload: 
+- Families can upload their case details, including the goal and fundraising deadline.
+### Project Creation: 
+- Utilize Allo to create a project with a defined pool and milestone-based allocation strategy.
 
-This procedure aims to streamline the process of seeking medical treatment abroad, ensuring that families are well-informed and prepared for the journey ahead. Collaboration between various stakeholders facilitates a smooth and successful medical journey.
+## For Donors:
+### Case Browsing:
+- Donors can browse cases, read patient stories, and review fundraising goals and deadlines.
+### Donation:
+- Make secure donations using USDC (ERC20) to a chosen case.
+### Case Tracking:
+- Post-donation, donors can track case status and stay updated on medical care milestones, including diagnostics, medical procedures, and post-procedure care.
+### Decision Making:
+- Donors can vote on additional fund requirements
+- In case of excess funds
+  -- Return back to the donor.
+  -- Repurpose for a different case.  
 
-
-   
+## For Medical Foundations/Hospitals:
+### Status Updates:
+ - Hospitals can update patient care status and milestone achievements.
+### Fund Release:
+- Funds are securely released from the pool to the hospital upon milestone completion.

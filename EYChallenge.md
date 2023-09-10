@@ -1,5 +1,5 @@
 # 🌱 Project Info - Get to know us!
-**Project Name:** Care Pledge (CP)
+**Project Name:** Care Pledge
 
 **Description of Solution:** Solving access to specialized medical services for Sickle Cell disease patients from Africa (e.g. Nigeria) requiring overseas (e.g. Singapore, India, South Africa) treatment via Public Goods funding utilizing blockchain technology. Aims to empower donors by providing transparency of usage of funds while repurposing additional funds (Regenerative).
 
@@ -25,21 +25,32 @@ Care Pledge interacts with Allo Protocol - an open-source protocol which is depl
 
 CP Network: Ethereum [Allo Contracts](https://docs.allo.gitcoin.co/overview/contracts)
 
-# 🏛️ CP Design
+# 🌳 CP Design
 
-## Why Privacy?
+## 🤔 Why Privacy?
 
 At the core of healthcare systems, privacy serves as the bedrock of trust between patients and healthcare providers. It ensures that sensitive information such as genetic data, diagnoses, treatment plans are safeguarded from malicious use. The protection of patient's privacy fosters open communication, which empowers patients to share critical information honestly to their healthcare professionals. By maintaining robust privacy safeguards, healthcare systems also indirectly achieves the capability to comply with legal requirements at a global scale - which ultimately contribute to high quality patient treatments.
 
-## Solving Privacy 
+## 🕵️ Solving Privacy 
 
 Before we take a deep dive into privacy solutions, let's quickly recap the top three problems that Care Pledge would need to address in order to seamlessly integrate this service for users in Africa while complying to national health regulations.
 1. Families or patients have limited resources to pay for services (Need cheap fees when interacting with the blockchain).
 2. Care Pledge needs a platform to create a network of reputable affiliates and registered users to prevent fraudulent or abuse towards healthcare system.
 3. Information verified by healthcare practitioners (HCP) needs to be kept confidential while providing proofs to donors (funding transparency).
 
-Considering the available privacy blockchain solutions out there such as Aztec, Secret Network, and Nightfall 3 - we would argue that Nightfall 3 offers the most compelling solution that best fits our needs. For starters, Nightfall 3 is designed to be compatible with the Ethereum network - where Care Pledge is deployed. In this latest iteration, Nightfall 3 was also recognized for its low cost and high efficiency as it aggregates all ZK Proofs into optimistic rollups. This drastically decreases the high gas computational costs from ZK Proof transactions, thus lowering network fees which goes a long way for economically challenged users. Next, Nightfall 3 is designed as an enterprise solution. This perfectly fits our need to connect a large network of affiliates and users, while handling large amount of transactions. Supplementing our experiences in the Healthcare sector, we see huge value in adopting Nightfall 3's technology since it offers strong security through its rigorous audits and fraud detection. 
+Considering the available privacy blockchain solutions out there such as Aztec, Secret Network, and Nightfall 3 - we would argue that Nightfall 3 offers the most compelling solution that best fits our needs. For starters, Nightfall 3 is designed to be compatible with the Ethereum network - where Care Pledge is deployed. In this latest iteration, Nightfall 3 was also recognized for its low cost and high efficiency as it aggregates all ZK Proofs into optimistic rollups. This drastically decreases the high gas computational costs from ZK Proof transactions, thus lowering network fees which goes a long way for economically challenged users. Next, Nightfall 3 is designed as an enterprise solution. This perfectly fits our need to connect a large network of affiliates and users, while handling large amount of transactions. It is also worth noting that Nightfall 3 requires users to obtain X.509 certification prior to use. Essentially, this certification is an authentication security framework providing digital trust. In conclusion, from our experiences in the Healthcare sector, we see huge value in adopting Nightfall 3's technology with its suite of offerings from strong security to its scalable enterprise solutions.
 
 ![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/5d03272a-7666-4dbd-ad4a-7a6bba27d576)
 
-## Architecture
+## 🏛️ Architecture
+
+### Bridge between Ethereum & Nightfall?
+LayerZero, specifically Polyhedra's zkLightClient technology is used to bridge between Ethereum and Nightfall 3. 
+
+![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/848a00a9-f278-4a46-b520-99a0c50e23e7)
+
+### Data/Tokens transferred?
+There will only be transmission of messages (bytes) across different networks. ERC-20 tokens to be transferred across networks for fee payment.
+
+### Privacy driven workflow(s)?
+The workflow requiring privacy features will be the Deposit transaction. During the fund dispersion step to the Healthcare practitioner/institutions, they will need to upload the patient's report for verification. However, this information does not need to be known by the donor(s). In essence, this step obfuscates the patient information to ensure data protection, thereby aligning with regulatory standards.
