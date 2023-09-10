@@ -46,5 +46,8 @@ Considering the available privacy blockchain solutions out there such as Aztec, 
 
 LayerZero, specifically Polyhedra's zkLightClient technology is used to bridge between Ethereum and Nightfall 3. 
 
-![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/063bbd44-a767-48cc-8299-44fb457ce142)
+![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/c9cb8eae-b954-4997-9577-da7954f992d7)
+
+
+
 
