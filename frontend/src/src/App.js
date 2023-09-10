@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Nav/Navbar";
+import HomePage from "./Home/HomePage";
+import AboutPage from "./About/AboutPage";
+import ProjectsPage from "./Project/ProjectsPage";
+import ProjectDetailPage from "./ProjectDetail/ProjectDetailPage";
+import ProjectCreatePage from "./ProjectCreate/ProjectCreate";
+import AccountPage from "./Account/AccountPage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:id" element={<ProjectDetailPage />} />
+          <Route path="/projectCreate" element={<ProjectCreatePage />} />
+          <Route path="/account" element={<AccountPage/ >} />
+        </Routes>
+      </Router>
+
+      {/* <button class="ui button">Click Here</button> */}
     </div>
   );
 }
