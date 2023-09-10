@@ -10,18 +10,18 @@ services:
     ports:
       - ${POSTGRES_PORT}:${POSTGRES_PORT}
 
-  care-pledge-app:
-    image: node:latest
-    container_name: care_pledge_app
-    depends_on: 
-      - care-pledge-database
-    links:
-      - care-pledge-database
-    environment: 
-      WAIT_HOSTS: postgres:5436
-    volumes:
-      - ../:/var/www/app/api
-    ports: 
-      - ${NODE_PORT}:${NODE_PORT}
-    working_dir: '/var/www/app/api'
-    command: npm start
+  # care-pledge-app:
+  #   image: node:latest
+  #   container_name: care_pledge_app
+  #   depends_on: 
+  #     - care-pledge-database
+  #   links:
+  #     - care-pledge-database
+  #   environment: 
+  #     WAIT_HOSTS: postgres:5436
+  #   volumes:
+  #     - ../:/var/www/app/api
+  #   ports: 
+  #     - ${NODE_PORT}:${NODE_PORT}
+  #   working_dir: '/var/www/app/api'
+  #   command: npm start

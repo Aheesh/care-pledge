@@ -13,4 +13,5 @@ export const {
   HTTP_FORBIDDEN,
   HTTP_ERROR,
   SALT_ROUNDS,
+  FIREBLOCKS_API_KEY
 } = process.env;

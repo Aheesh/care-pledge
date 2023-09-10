@@ -8,6 +8,6 @@ CREATE TABLE care_pledge.users(
   user_email VARCHAR (60) UNIQUE NOT NULL,
   user_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   user_updated_at TIMESTAMP NULL
-  -- user_balance FLOAT NULL,
+  user_wallet_id VARCHAR(60) NULL,
   -- user_currency_code VARCHAR (3) NULL
 );
