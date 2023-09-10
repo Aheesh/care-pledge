@@ -29,8 +29,7 @@ CP Network: Ethereum [Allo Contracts](https://docs.allo.gitcoin.co/overview/cont
 
 ## Why Privacy?
 
-Two words - **Patient Privacy**.
-A scientific study in 2020 spearheaded by [Nong et al.](https://pubmed.ncbi.nlm.nih.gov/33320264/) revealed that 21% of adults in US partaking in the study experienced healthcare discrimination. This data also showed that demographic and health-related characteristics aspects were the biggest factor of discrimination. In addition to this, the unconscious human bias is also wired to create perspectives that often cloud their judgements when making a decision to donate and support a good cause. Looking beyond discrimination; the healthcare system itself is also plagued with fraud and abuse, where the patients backgrounds are often subjectively evaluated during the billing process. This is a clear example of malicious activity which is full of oversights. Through the implementation of a medical crowdfunding utilizing privacy-preserved blockchain technology (Care Pledge), we will be able to keep patient information confidential while complying to regulations such as the Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule and International Standards (e.g. ISO 27001).
+At the core of healthcare systems, privacy serves as the bedrock of trust between patients and healthcare providers. It ensures that sensitive information such as genetic data, diagnoses, treatment plans are safeguarded from malicious use. The protection of patient's privacy fosters open communication, which empowers patients to share critical information honestly to their healthcare professionals. By maintaining robust privacy safeguards, healthcare systems also indirectly achieves the capability to comply with legal requirements at a global scale - which ultimately contributing to the highest quality of patient treatments.
 
 ## Privacy Solutions
 
