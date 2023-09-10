@@ -34,4 +34,8 @@ A scientific study in 2020 spearheaded by [Nong et al.](https://pubmed.ncbi.nlm.
 
 ## Privacy Solutions
 
-Before we take a deep dive into privacy solutions, let's consider the available blockchain to host  
+Before we take a deep dive into privacy solutions, let's quickly recap the top three problems that Care Pledge would need to address in order to seamlessly integrate this product for users in Africa while complying to national health regulations.
+1. Families or patients have limited capability to pay for services (Need cheap fees when interacting with the blockchain).
+2. Care Pledge needs a platform to create a network of reputable affiliates and registered users to prevent fraudulent or abuse towards healthcare system.
+3. Information verified by healthcare practitioners (HCP) needs to be kept confidential while providing proofs to donors (funding transparency).
+Considering the available privacy blockchain solutions out there such as Aztec, ZKSync, and Nightfall - we would argue that Nightfall checks all our boxes for a privacy solution that best fits our needs. 
