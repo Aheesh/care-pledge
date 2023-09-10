@@ -10,11 +10,7 @@ interface ICarePledgeCaseFactory {
     /**
      * @notice Deploys a new CarePledgeCase contract
      */
-    function createNewCase(
-        address donationToken,
-        Metadata memory metadata,
-        bytes memory data
-    ) external returns (uint256, address, address);
+    function createNewCase(address donationToken,bytes memory data) external returns (uint256, address, address);
 
     function isCaseFromFactory(uint256 poolId) external view returns (bool);
 }   

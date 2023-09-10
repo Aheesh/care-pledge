@@ -40,13 +40,12 @@ contract CarePledgeCaseFactory is ICarePledgeCaseFactory {
     // Emits PoolCreated(poolId, _profileId, _strategy, _token, _amount, _metadata);
     function createNewCase(
         address donationToken,
-        Metadata memory metadata,
         bytes memory data
     ) external returns (uint256, address, address) {
         address[] memory managers = new address[](1);
         CarePledgeManager manager = new CarePledgeManager(_allo, _registry);
         managers[0] = address(manager);
-
+        Metadata memory metadata = Metadata(1, "");
         CarePledgeStrategy strategy = new CarePledgeStrategy(
             address(_allo),
             donationToken,

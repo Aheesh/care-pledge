@@ -81,7 +81,6 @@ contract CarePledgeCaseTest is Test {
 
         (uint256 poolId, address strategy, address manager) = factory.createNewCase(
             address(_usdc),
-            Metadata(1,""),
             abi.encode(caseData)
         );
 
