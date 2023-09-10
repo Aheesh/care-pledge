@@ -1,66 +1,16 @@
-## Foundry
+# Contracts
+On-chain contracts for the Care Pledge Protocol.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Contents
 
-Foundry consists of:
+### CarePledgeCaseFactory
+Creates an Allo pool to hold funds as well as deploys new `CarePledgeStrategy`, and `CarePledgeManager` contracts for each Care Pledge Case.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### CarePledgeManager
+The entry point contract that is used to interact with the Care Pledge Case pools on Allo.
 
-## Documentation
+### CarePledgeStrategy
+A strategy contract that mantains the funding and payment distrobution strategy of Allo pools for each Care Pledge Case.
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Factory Deployments
+[sepolia:0x2987BEc55f255E045404e9814DcA176B8bcc8f05](https://sepolia.etherscan.io/address/0x2987BEc55f255E045404e9814DcA176B8bcc8f05)
