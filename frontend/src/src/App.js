@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {sendRequest} from './services/index.js';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={sendRequest}></button>
       </header>
     </div>
   );

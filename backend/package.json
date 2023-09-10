@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Bulls-Vs-Bears/api#readme",
   "dependencies": {
+    "@fastify/cors": "^8.3.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
