@@ -31,8 +31,6 @@ CP Network: Ethereum [Allo Contracts](https://docs.allo.gitcoin.co/overview/cont
 
 At the core of healthcare systems, privacy serves as the bedrock of trust between patients and healthcare providers. It ensures that sensitive information such as genetic data, diagnoses, treatment plans are safeguarded from malicious use. The protection of patient's privacy fosters open communication, which empowers patients to share critical information honestly to their healthcare professionals. By maintaining robust privacy safeguards, healthcare systems also indirectly achieves the capability to comply with legal requirements at a global scale - which ultimately contribute to high quality patient treatments.
 
-![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/f002c8fa-f60b-4334-a42c-ebad098ab348)
-
 ## Solving Privacy 
 
 Before we take a deep dive into privacy solutions, let's quickly recap the top three problems that Care Pledge would need to address in order to seamlessly integrate this service for users in Africa while complying to national health regulations.
@@ -41,5 +39,7 @@ Before we take a deep dive into privacy solutions, let's quickly recap the top t
 3. Information verified by healthcare practitioners (HCP) needs to be kept confidential while providing proofs to donors (funding transparency).
 
 Considering the available privacy blockchain solutions out there such as Aztec, Secret Network, and Nightfall 3 - we would argue that Nightfall 3 offers the most compelling solution that best fits our needs. For starters, Nightfall 3 is designed to be compatible with the Ethereum network - where Care Pledge is deployed. In this latest iteration, Nightfall 3 was also recognized for its low cost and high efficiency as it aggregates all ZK Proofs into optimistic rollups. This drastically decreases the high gas computational costs from ZK Proof transactions, thus lowering network fees which goes a long way for economically challenged users. Next, Nightfall 3 is designed as an enterprise solution. This perfectly fits our need to connect a large network of affiliates and users, while handling large amount of transactions. Supplementing our experiences in the Healthcare sector, we see huge value in adopting Nightfall 3's technology since it offers strong security through its rigorous audits and fraud detection. 
+
+![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/5d03272a-7666-4dbd-ad4a-7a6bba27d576)
 
 ## Architecture
