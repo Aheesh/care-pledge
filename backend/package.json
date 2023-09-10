@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "BVB",
+  "description": "care_pledge",
   "main": "index.js",
   "scripts": {
     "lint-staged": "lint-staged",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Bulls-Vs-Bears/api#readme",
   "dependencies": {
+    "@fastify/cors": "^8.3.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
@@ -35,5 +36,6 @@
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "nodemon": "^2.0.4"
-  }
+  },
+  "type": "module"
 }
