@@ -10,7 +10,7 @@ import { SafeERC20, IERC20 } from "openzeppelin-contracts/contracts/token/ERC20/
 
 contract CarePledgeManager is ICarePledgeManager {
     using SafeERC20 for IERC20;
-    event Log(string message);
+
     Allo private _allo;
     IRegistry private _registry;
     uint256 private _poolId;

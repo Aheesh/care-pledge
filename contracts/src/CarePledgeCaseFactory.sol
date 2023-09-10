@@ -13,7 +13,6 @@ contract CarePledgeCaseFactory is ICarePledgeCaseFactory {
     IRegistry private _registry;
     bytes32 internal immutable _profileId;
     mapping(uint256 => bool) private _isCaseFromFactory;
-    event Log(string message);
     constructor(
         address allo,
         address registry,
@@ -54,7 +53,6 @@ contract CarePledgeCaseFactory is ICarePledgeCaseFactory {
             data,
             address(manager)
         );
-        emit Log("Created strategy");
         uint256 poolId = _allo.createPoolWithCustomStrategy(
             _profileId,
             address(strategy),
@@ -64,9 +62,7 @@ contract CarePledgeCaseFactory is ICarePledgeCaseFactory {
             metadata,
             managers
         );
-        emit Log("Created pool");
         manager.initialize(poolId, donationToken, address(strategy));
-        emit Log("Initialized manager");
         _isCaseFromFactory[poolId] = true;
 
         emit NewCase(poolId, address(manager));

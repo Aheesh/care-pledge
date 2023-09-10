@@ -19,7 +19,7 @@ contract CarePledgeCaseTest is Test {
     address private _donor2;
     MockERC20 private _usdc;
     uint256 private _sepoliaFork;
-    event Log3(string message);
+
     Allo private _allo;
     IRegistry private _registry;
 

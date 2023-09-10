@@ -13,9 +13,7 @@ contract CarePledgeStrategy is
     ReentrancyGuard
 {
     using SafeERC20 for IERC20;
-    event Log(string message);
-    event LogAddr(address message);
-    event LogUint(uint256 message);
+
     /// ******************** Storage ********************
     address private _patient;
     address[] private _recipients;
@@ -91,8 +89,6 @@ contract CarePledgeStrategy is
         address _sender
     ) internal virtual override {
         // if (_sender != _manager) {
-        //     emit LogAddr(_sender);
-        //     emit LogAddr(_manager);
         //     revert UnauthorizedCaller();
         // }
         uint256 recipentLength = _recipientIds.length;
