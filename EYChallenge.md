@@ -25,13 +25,13 @@ Care Pledge interacts with Allo Protocol - an open-source protocol which is depl
 
 CP Network: Ethereum [Allo Contracts](https://docs.allo.gitcoin.co/overview/contracts)
 
-# 🏛️ CP Design
+# 🌳 CP Design
 
-## Why Privacy?
+## 🤔 Why Privacy?
 
 At the core of healthcare systems, privacy serves as the bedrock of trust between patients and healthcare providers. It ensures that sensitive information such as genetic data, diagnoses, treatment plans are safeguarded from malicious use. The protection of patient's privacy fosters open communication, which empowers patients to share critical information honestly to their healthcare professionals. By maintaining robust privacy safeguards, healthcare systems also indirectly achieves the capability to comply with legal requirements at a global scale - which ultimately contribute to high quality patient treatments.
 
-## Solving Privacy 
+## 🕵️ Solving Privacy 
 
 Before we take a deep dive into privacy solutions, let's quickly recap the top three problems that Care Pledge would need to address in order to seamlessly integrate this service for users in Africa while complying to national health regulations.
 1. Families or patients have limited resources to pay for services (Need cheap fees when interacting with the blockchain).
@@ -42,12 +42,15 @@ Considering the available privacy blockchain solutions out there such as Aztec, 
 
 ![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/5d03272a-7666-4dbd-ad4a-7a6bba27d576)
 
-## Architecture
+## 🏛️ Architecture
 
+### Bridge between Ethereum & Nightfall?
 LayerZero, specifically Polyhedra's zkLightClient technology is used to bridge between Ethereum and Nightfall 3. 
 
 ![image](https://github.com/baileyspraggins/care-pledge/assets/93211672/848a00a9-f278-4a46-b520-99a0c50e23e7)
 
-There will only be transmission of messages (bytes) across different networks. No tokens will be transferred.
+### Data/Tokens transferred?
+There will only be transmission of messages (bytes) across different networks. ERC-20 tokens to be transferred across networks for fee payment.
 
-
+### Privacy driven workflow(s)?
+The workflow requiring privacy features will be the Deposit transaction. During the fund dispersion step to the Healthcare practitioner/institutions, they will need to upload the patient's report for verification. However, this information does not need to be known by the donor(s). In essence, this step obfuscates the patient information to ensure data protection, thereby aligning with regulatory standards.
