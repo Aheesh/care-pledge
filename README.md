@@ -59,5 +59,9 @@ To address these challenges, we present the CarePledge DApp, built on the Gitcoi
 ### Fund Release:
 - Funds are securely released from the pool to the hospital upon milestone completion.
 
-## Demo Video : https://www.youtube.com/watch?v=6XoVBpASNIo&ab_channel=aheeshn
-## Testnet : https://sepolia.etherscan.io/address/0xBaC7d19e6933054883bCaD349d4650201c530199#code
+## Demo Video :
+https://www.youtube.com/watch?v=6XoVBpASNIo&ab_channel=aheeshn
+https://docs.google.com/presentation/d/1pQWDQhKSEzLGxuoznJ9_NmSt4_dVzUvcIg1KNgmplgs/edit#slide=id.p1
+
+## Testnet :
+https://sepolia.etherscan.io/address/0xBaC7d19e6933054883bCaD349d4650201c530199#code
