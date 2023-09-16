@@ -1,4 +1,4 @@
-# care-pledge
+# Care-Pledge
 Public Goods Funding Dapp for Permissionless II Hackathon
 
 # Introduction
@@ -58,3 +58,6 @@ To address these challenges, we present the CarePledge DApp, built on the Gitcoi
  - Hospitals can update patient care status and milestone achievements.
 ### Fund Release:
 - Funds are securely released from the pool to the hospital upon milestone completion.
+
+## Demo Video : https://www.youtube.com/watch?v=6XoVBpASNIo&ab_channel=aheeshn
+## Testnet : https://sepolia.etherscan.io/address/0xBaC7d19e6933054883bCaD349d4650201c530199#code
