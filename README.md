@@ -15,7 +15,8 @@ The current crowdfunding landscape is fraught with challenges, including:
 - There is no clear mechanism to handle excess funds and whether they can be used for other noble causes or redirected to a general pool.
 
 # Use Case Focus
-We are focusing on a critical use case involving:
+We are focusing on a critical use case involving:![White Colorful Modern Timeline Design Process Infographic](https://github.com/baileyspraggins/care-pledge/assets/8059227/000577d6-0307-4633-be4a-e26142db2670)
+
 ## Target Disease:
 - Sickle Cell Disease requiring bone marrow transplants.
 ## Demographic:
